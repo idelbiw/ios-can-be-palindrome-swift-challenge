@@ -2,6 +2,12 @@ import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
 
+    var canBeReversed: Bool = false
+    let reverseString = String(string.reversed())
+    if reverseString == string {
+        canBeReversed = true
+    }
+    return canBeReversed
 }
 
 
